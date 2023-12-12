@@ -1,0 +1,259 @@
+/*inportation local*/
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+/*variable */
+/*mise en page*/
+body {
+  background: #ededed;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  /*padding-left: 20px;*/
+}
+
+h3 {
+  font-size: 1.2rem;
+  /*padding-left: 40px;*/
+}
+
+p {
+  line-height: 1.5rem;
+}
+
+ol {
+  margin-left: 1.5rem;
+  padding: 1.5rem;
+}
+ol li {
+  line-height: 1.5rem;
+}
+
+#wraper {
+  margin: 0 auto;
+  display: block;
+  width: 80%;
+}
+
+.test01 {
+  color: #d216d2;
+  background: #0073c6;
+  text-align: center;
+}
+
+.contenu {
+  border: dashed 4px green;
+  margin: 15px;
+  padding: 10px;
+}
+
+.test3 {
+  color: #5b3edd;
+}
+
+.explication {
+  margin: 0px auto;
+  background: #c1e8c1;
+  width: 80%;
+  margin-bottom: 2%;
+}
+.explication h2,
+.explication h3 {
+  color: #108b7e;
+}
+.explication p {
+  color: #536d6d;
+}
+
+.comendeValide {
+  color: orangered;
+}
+
+/* les in brication */
+.tableau td,
+.tableau th {
+  border: solid 1px black;
+  text-align: center;
+  padding: 20px;
+}
+.tableau td .tabl-contenu,
+.tableau th .tabl-contenu {
+  background-color: #5e5eba;
+}
+.tableau .tabl-tire {
+  background-color: #4343eb;
+}
+.tableau .tabl-tire .Ttabl {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: red;
+}
+.tableau .col2 {
+  background-color: aliceblue;
+}
+.tableau .col3 {
+  background-color: red;
+}
+.tableau .col1,
+.tableau .col2,
+.tableau .col3, .col-titre .tableau {
+  color: black;
+  padding: 15px;
+}
+.tableau .col1:hover,
+.tableau .col2:hover,
+.tableau .col3:hover, .col-titre .tableau:hover {
+  border: solid red;
+  border-width: 0px 1px 0px 1px;
+  color: #b42299;
+  background-color: rgba(172, 255, 47, 0.363);
+}
+.tableau .tabl-contenu {
+  background-color: #5e5eba;
+}
+.tableau .tabl-pied {
+  background-color: #1b1b74;
+}
+.tableau .tabl-pied th {
+  color: azure;
+  padding: 10px;
+}
+
+.btn {
+  background: #637aff;
+  color: #e4eb0c;
+  margin: 5px;
+  padding: 20px;
+  font-weight: bold;
+}
+.btn:hover {
+  background: #b42299;
+}
+@media only screen and (min-width: 1200px) {
+  .btn {
+    padding: 10px;
+    background: #6384ff;
+    color: #FFF;
+    text-transform: uppercase;
+  }
+}
+
+/* demo @extend */
+.btn2, .btn2-danger, .card-cancel, .card-action {
+  margin: 5px;
+  padding: 5px 12px;
+}
+
+.btn2, .btn2-danger, .card-cancel, .card-action {
+  background: #698fd6;
+  color: #FFF;
+}
+.btn2:hover, .btn2-danger:hover, .card-cancel:hover, .card-action:hover {
+  background: #43629b;
+}
+
+/* demo @extend */
+.btn2-danger, .card-cancel {
+  background: #b34d4e;
+}
+.btn2-danger:hover, .card-cancel:hover {
+  background: #742121;
+}
+
+.card {
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* demo @extend  %ombre*/
+.card {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.card-actions {
+  display: flex;
+}
+
+/*# sourceMappingURL=style.css.map */

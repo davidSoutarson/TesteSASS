@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>David-Teste-sass</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div id="wraper">
+    <h1 class="test01">Le preproseceur SASS</h1>
+    <div class="contenu">
+      <h1 class="test3">Instaler et utiliser sass</h1>
+      <p>
+        -!- note personelle: fiver dev en frilence fiver et une platfome de
+        frelance
+      </p>
+      <h2>Les étaples d'utilisation de scss</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Pariatur excepturi reprehenderit ut aliquid dolor error
+        aperiam voluptatem. Commodi aspernatur eos asperiores,
+        omnis ducimus, ut, earum odit in rem cum magnam?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Pariatur excepturi reprehenderit ut aliquid dolor error
+        aperiam voluptatem. Commodi aspernatur eos asperiores,
+        omnis ducimus, ut, earum odit in rem cum magnam?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Pariatur excepturi reprehenderit ut aliquid dolor error
+        aperiam voluptatem. Commodi aspernatur eos asperiores,
+        omnis ducimus, ut, earum odit in rem cum magnam?
+      </p>
+      <h2>Les étaples d'utilisation de scss</h2>
+      <p>Apres avoir coretment instaler SASS sur sont PC</p>
+      <ol>
+        <li>dans votre projet créer d'un dossier sass</li>
+        <li>dans le dossier sass, créer un fichier style.sass</li>
+        <li>création d'un dossier css "Vide"</li>
+        <li>
+          dans powershell votreProjet>
+          sass[espace]sass[/]style.scss[espace]css[/]style.css
+        </li>
+      </ol>
+      <div class="explication">
+        <h2>explication :</h2>
+        <h3>Où et comment écrire les commandes sass dans le terminal</h3>
+        <p>
+          A la racine du projet en cours : sass espace 1er paramètre chemin du
+          fichier .scss espace 2em parametre chemin du fichier .css
+        </p>
+        <p>voici la commande a tapé pour sass</p>
+        <p>sass sass/style.scss css/style.css</p>
+        <h3>Pour mois la commande d'écriture automatique est:</h3>
+        <p>sass --watch sass/style.scss:css/style.css</p>
+        <p>
+          Dans mon cas la commande inverser:
+          <del> sass sass/style.scss css/style.css --watch </del>
+          Cette commande n'est pas valide sur mon système. <br>
+          La commande valide sur mon système et :
+          <strong class="comendeValide">
+            sass --watch sass/style.scss:css/style.css
+          </strong>
+        </p>
+
+        <h3>Gestion de l'indentation automatique</h3>
+        <p>
+          --style <br>
+          --style= peut prendre 4 paramètres <br>
+          Cette option (en abrégé -t) contrôle le style de sortie du CSS
+          résultant . Ruby Sass prend en charge quatre styles de sortie :
+          <br />
+          01 nested(la valeur par défaut) indent les règles CSS pour
+          correspondre à l'imbrication de la source Sass. <br>
+          02 expanded écrit chaque sélecteur et déclaration sur sa propre ligne.
+          <br />
+          03 compact place chaque règle CSS sur sa propre ligne. <br>
+          04 compressed supprime autant de caractères supplémentaires que
+          possible et écrit la feuille de style entière sur une seule
+        </p>
+        <p>
+          La commande valide sur mon siteme et :
+          <strong class="comendeValide">
+            sass --watch sass/style.scss:css/style.css --style=expanded
+          </strong>
+        </p>
+      </div>
+
+
+
+    </div>
+    <!-- fin contenu -->
+
+    <div class="contenu">
+      <h2>L'imbrication avec scss</h2>
+      <p>
+        Le but de l'imbrication est d'évitait les répétions pour le développeur.
+        Rappel le DEV et fainéant ! Il déteste ce répétait pour rien.
+      </p>
+      <div class="explication">
+        <h2>Explication:</h2>
+        <p>
+          explication de limbrication:blabla
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Magni harum at explicabo iure? Saepe quibusdam tenetur a!
+          Repellendus,reprehenderit, velit voluptatem ea dolor eaque
+          atque voluptatum officiis soluta a esse!
+        </p>
+      </div>
+
+      <div class="demo">
+        <h2>Demonstation </h2>
+        <p> Utilisez l'inspection pour mieu compprendre</p>
+        <table class="tableau">
+          <thead class="tabl-tire">
+            <tr>
+              <th class="Ttabl" colspan="3">mon de la colone</th>
+            </tr>
+            <tr class="col-titre">
+              <th class="col1">col 01</th>
+              <th class="col2">col 02</th>
+              <th class="col3">col 03</th>
+            </tr>
+          </thead>
+          <tbody class="tabl-contenu">
+            <tr>
+              <td class="col1">contenu C1 L1</td>
+              <td class="col2">contenu C2 L1</td>
+              <td class="col3">contenu C3 L1</td>
+            </tr>
+            <tr>
+              <td class="col1">contenu C1 L2</td>
+              <td class="col2">contenu C2 L2</td>
+              <td class="col3">contenu C3 L2</td>
+            </tr>
+            <tr>
+              <td class="col1">contenu C1 L3</td>
+              <td class="col2">contenu C2 L3</td>
+              <td class="col3">contenu C3 L3</td>
+            </tr>
+          </tbody>
+          <tfoot class="tabl-pied">
+            <tr>
+              <th>Pied de tableau 1</th>
+              <th>Pied de tableau 2</th>
+              <th>Pied de tableau 3</th>
+            </tr>
+          </tfoot>
+        </table>
+        <!-- tableau fin -->
+      </div>
+
+    </div>
+    <!--  fin  contenu-->
+
+    <div class="contenu">
+      <h2>Utilisation du & commercial et de l'imbrication</h2>
+      <div class="explication">
+        <h2>Explication:</h2>
+        <p>
+          Pour cet exemple je vais utiliser un mediaqueri : @media only
+          elle aura pour effet de modifier le padding et le background en fonction
+          de la talle de l'écran. Attention : Blabla
+        </p>
+      </div>
+      <div class="demo">
+        <button class="btn">Utilisation & de L'imbrication</button>
+      </div>
+    </div>
+    <!--  fin contenu -->
+
+    <div class="contenu">
+      <h2> l'éritage Sass</h2>
+      <p>démonstration: @extend ou %selecteur</p>
+      <p> l'eritage permet de gader des class tres sementique et de ger lerita par le css</p>
+      <div class="explication">
+        <h2>Explication:</h2>
+        <p>
+          <strong>@extent</strong> permet de reperter la mise en page d'un selecteur
+          sans pour autent reecrire la class conserner. Cela evite dutiliser de class suplaimentaire.
+          <strong> Atention l'eritage coter scss a un impacte sur le poi du fichier css</strong>
+        </p>
+      </div>
+      <div class="demo">
+        <h2>Demonstation</h2>
+        <p>Utilisez l'inspection pour mieu comprendre</p>
+        <p>
+          <a href="#" class="btn2"> OK </a>
+          <a href="#" class="btn2-danger"> Supprimer </a>
+        </p>
+
+        <div class="card">
+          <p>%mon seleteur invisible</p>
+          <div class="card-actions">
+            <div class="card-action"> ok</div>
+            <div class="card-cancel"> Annuler</div>
+          </div>
+        </div>
+
+        <p>la creation de carde html</p>
+      </div>
+    </div>
+    <!-- fin contenue -->
+
+    <!-- div.contenu>div.explication+div.demo -->
+    <!-- div.contenu>h2+div.explication>h2^div.demo>h2 -->
+
+    <div class="contenu">
+      <h2>Les variable Sass </h2>
+      <p>
+        Les vavriable sass et les variable css.Les variables
+        permettent de centraliser certaines déclarations :
+        de couleurs, de largeurs, etc. On peut ensuite modifier ces variables
+        pour que les nouvelles valeurs soient prises en compte en plusieurs endro
+        Sintax de la déclaration des variable: <strong>$mavarible : #0073v6;</strong>
+      </p>
+      <p>
+        fontionaliter des varible en sass :
+      </p>
+      <ol>
+        <li>Stocker une valeur</li>
+        <li>Apliquer des opérations</li>
+        <li>stoker une regle</li>
+      </ol>
+      <div class="explication">
+        <h2>Explication</h2>
+        <p>
+          voici l'explication
+        </p>
+      </div>
+      <div class="demo">
+        <h2>Demonstation</h2>
+        <p>Utilisez l'inspection pour mieu comprendre</p>
+
+      </div>
+
+      <div class="contenu">
+        <h2>Les fontction sass : scss</h2>
+        <p>
+          scss poséde deux tipe de fontion les fontion native
+          et la posibiliter de crer ses proprer fonction.
+        </p>
+        <h3>les fontion native prinsipale sass</h3>
+        <ul>
+          <li>RANOM</li>
+          <li>ROUND</li>
+          <li>ADJUST COLOR</li>
+          <li>DARKEN & LIGTHEN</li>
+        </ul>
+
+        <h3>Création de fonction</h3>
+
+        <p>declaration de la fontion:</p>
+
+        <p>@function double($param) { <br>$resuta :param*2;<br> @retun $resuta; <br> }</p>
+
+        <div class="explication">
+          <h2>Explication</h2>
+          <p>
+            voici l'explication:
+          </p>
+        </div>
+        <div class="demo">
+          <h2></h2>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- wraper fin -->
+</body>
+
+</html>

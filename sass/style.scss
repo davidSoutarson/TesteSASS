@@ -1,0 +1,215 @@
+/*inportation local*/
+@import "libs/reste.scss";
+/*variable */
+$primary: #0073c6;
+$secondary: #ededed;
+
+/*mise en page*/
+body {
+  background: $secondary;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  /*padding-left: 20px;*/
+}
+
+h3 {
+  font-size: 1.2rem;
+  /*padding-left: 40px;*/
+}
+
+p {
+  line-height: 1.5rem;
+}
+
+ol {
+  margin-left: 1.5rem;
+  padding: 1.5rem;
+
+  li {
+    line-height: 1.5rem;
+  }
+}
+
+#wraper {
+  margin: 0 auto;
+  display: block;
+  width: 80%;
+}
+
+.test01 {
+  color: rgb(210, 22, 210);
+  background: $primary;
+  text-align: center;
+}
+
+.contenu {
+  border: dashed 4px green;
+  margin: 15px;
+  padding: 10px;
+}
+
+.test3 {
+  color: rgb(91, 62, 221);
+}
+
+.explication {
+  margin: 0px auto;
+  background: rgb(193, 232, 193);
+  width: 80%;
+  margin-bottom: 2%;
+
+  h2,
+  h3 {
+    color: rgb(16, 139, 126);
+  }
+
+  p {
+    color: rgb(83, 109, 109);
+  }
+}
+
+.comendeValide {
+  color: orangered;
+}
+
+/* les in brication */
+//Entrenemt sur tableaux
+
+.tableau {
+
+  td,
+  th {
+    border: solid 1px black;
+    text-align: center;
+    padding: 20px;
+
+    .tabl-contenu {
+      background-color: rgb(94, 94, 186);
+    }
+  }
+
+  .tabl-tire {
+    background-color: rgb(67, 67, 235);
+
+    .Ttabl {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: red;
+    }
+  }
+
+  .col2 {
+    background-color: aliceblue;
+  }
+
+  .col3 {
+    background-color: red;
+  }
+
+  .col1,
+  .col2,
+  .col3,
+  .col-titre & {
+    color: black;
+    padding: 15px;
+
+    &:hover {
+      border: solid red;
+      border-width: 0px 1px 0px 1px;
+      color: rgb(180, 34, 153);
+      background-color: rgba(172, 255, 47, 0.363);
+    }
+  }
+
+  .tabl-contenu {
+    background-color: rgb(94, 94, 186);
+  }
+
+  .tabl-pied {
+    background-color: rgb(27, 27, 116);
+
+    th {
+      color: azure;
+      padding: 10px;
+    }
+  }
+}
+
+.btn {
+  background: rgb(99, 122, 255);
+  color: rgb(228, 235, 12);
+  margin: 5px;
+  padding: 20px;
+  font-weight: bold;
+
+  &:hover {
+    background: rgb(180, 34, 153);
+  }
+
+  @media only screen and (min-width: 1200px) {
+    padding: 10px;
+    background: rgb(99, 132, 255);
+    color: #FFF;
+    text-transform: uppercase;
+  }
+}
+
+
+/* demo @extend */
+%bouton {
+  margin: 5px;
+  padding: 5px 12px;
+}
+
+.btn2 {
+  @extend %bouton;
+
+  background: rgb(105, 143, 214);
+  color: #FFF;
+
+  &:hover {
+    background: rgb(67, 98, 155);
+  }
+}
+
+/* demo @extend */
+.btn2-danger {
+  @extend .btn2;
+
+  background: rgb(179, 77, 78);
+
+  &:hover {
+    background: rgb(116, 33, 33);
+  }
+}
+
+%ombre {
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* demo @extend  %ombre*/
+.card {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 3px;
+  @extend %ombre;
+  text-align: center;
+}
+
+.card-actions {
+  display: flex;
+}
+
+.card-action {
+  @extend .btn2;
+}
+
+.card-cancel {
+  @extend .btn2-danger;
+}
