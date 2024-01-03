@@ -234,7 +234,7 @@ ol li {
 
 /* demo @extend */
 .btn2-danger, .card-cancel {
-  background: #b34d4e;
+  background: #b34d4b;
 }
 .btn2-danger:hover, .card-cancel:hover {
   background: #742121;

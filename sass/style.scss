@@ -182,10 +182,11 @@ ol {
 .btn2-danger {
   @extend .btn2;
 
-  background: rgb(179, 77, 78);
+  background: rgb(179, 77, 75);
 
   &:hover {
     background: rgb(116, 33, 33);
+
   }
 }
 
